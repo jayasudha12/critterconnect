@@ -3,7 +3,7 @@ const { v4: uuidv4 } = require('uuid');
 
 const addpet = async (req, res) => {
     try {
-        const {name,pettype,breed,gender,vaccinated,age,description,price} = req.body;
+        const {name,pettype,breedtype,gender,vaccinated,age,description,price} = req.body;
         const newPet = new Pet({
             petid:uuidv4(),
             name,
@@ -18,7 +18,7 @@ const addpet = async (req, res) => {
            
         });
         await newPet.save();
-        res.status(201).send({msg:"Product added successfully"});
+        res.status(201).send({msg:"Pet added successfully"});
     } catch (error) {
         console.log(error);
         res.status(500).send({ msg: 'Internal server error' });
