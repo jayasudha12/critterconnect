@@ -8,7 +8,7 @@ const addpet = async (req, res) => {
             petid:uuidv4(),
             name,
             pettype,
-            breed,
+            breedtype,
             gender,
             vaccinated,
             age,

@@ -12,16 +12,11 @@ const petschema = new mongoose.Schema({
         type:String,
         required:true
     },
-    breed:[{
-        breedid:{
-            type:String,
-            required:true
-        },
-        breedtype:{
+    breedtype:{
             type:String,
             required:true
         }
-    }],
+    ,
     gender:{
         type:String
     },
