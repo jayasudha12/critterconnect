@@ -12,7 +12,7 @@ jobs:
 
     defaults:
       run:
-        working-directory: estate_backend
+        working-directory: critterconnect
 
     steps:
       - name: Checkout repository
